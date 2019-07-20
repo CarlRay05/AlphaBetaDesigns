@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5CKB9MC');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <link id="pagestyle" rel="stylesheet" type="text/css" href="css/cirrusLight.css">
+
+  <!-- CSS Stylesheet SwitcherRoo-->
+  <script type="text/javascript">
+    function swapStyleSheet(sheet) {
+      document.getElementById('pagestyle').setAttribute('href', sheet);
+    }
+  </script>
+  <!-- CSS Stylesheet SwitcherRoo END-->
+
+  <title>Cirrus Weather</title>
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CKB9MC"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="container-fluid mb-5">
+
+    <!-- Image and text -->
+    <nav class="navbar sticky-top navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" class="d-inline-block align-top" alt=""      viewBox="0 0 140.88 116.35">
+          <title>Cloud</title><path class="a" d="M123.5,68A41.31,41.31,0,0,0,72.41,35.18a28.49,28.49,0,0,0-3.54-6.26l8.87-8.87A4.13,4.13,0,1,0,72,14.14l-9,9a28.74,28.74,0,0,0-13.18-5.44V4.15S48.19,0,45.9,0a4,4,0,0,0-4,4.15V16.89a28.74,28.74,0,0,0-13.33,5.49l-9-9a4.15,4.15,0,0,0-5.86,5.87l9,9a29.13,29.13,0,0,0-5.49,13.11h-13A4.34,4.34,0,0,0,0,45.62c0,2.29,4.15,4.73,4.15,4.73h13A29.07,29.07,0,0,0,22.21,63a28.87,28.87,0,0,0,15.27,53.38h78.08c13.36,0,24.75-10.36,25.3-23.72A24.68,24.68,0,0,0,123.5,68Zm-93.4-9a20.5,20.5,0,0,1-4.94-13.43A20.74,20.74,0,0,1,65,37.41a41.26,41.26,0,0,0-6.79,4.19A41.91,41.91,0,0,0,44.84,58.94,29.68,29.68,0,0,0,30.1,59.05Zm86.3,48.3H30.05a4.51,4.51,0,0,1-2.89-1.07C.87,84.06,30.25,50.25,56,74a.91.91,0,0,0,.65.24c5.27-.27,6.25-5.3,3.54-7.6a41.59,41.59,0,0,0-7.63-5.2,33.19,33.19,0,0,1,62.77,4.49c-8,.36-16,4.48-22.65,12a.94.94,0,0,0-.24.61c0,5.18,5,6.42,7.39,3.87,15.43-16.17,33.4-5.71,33.4,8.41A16.75,16.75,0,0,1,116.4,107.35Z"/>
+        </svg>
+        Cirrus weather
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" onclick="swapStyleSheet('css/cirrusLight.css')" data-toggle="collapse" data-target=".navbar-collapse.show">Light Theme<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="swapStyleSheet('css/cirrusWhite.css')" data-toggle="collapse" data-target=".navbar-collapse.show">White Theme</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="container align-items-center pb-5 animated zoomInDown">
+      <div class="cloudSVG my-3 animated tada animation-delay 5s">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.88 116.35"><defs></defs><title>Cloud</title><path class="a" d="M123.5,68A41.31,41.31,0,0,0,72.41,35.18a28.49,28.49,0,0,0-3.54-6.26l8.87-8.87A4.13,4.13,0,1,0,72,14.14l-9,9a28.74,28.74,0,0,0-13.18-5.44V4.15S48.19,0,45.9,0a4,4,0,0,0-4,4.15V16.89a28.74,28.74,0,0,0-13.33,5.49l-9-9a4.15,4.15,0,0,0-5.86,5.87l9,9a29.13,29.13,0,0,0-5.49,13.11h-13A4.34,4.34,0,0,0,0,45.62c0,2.29,4.15,4.73,4.15,4.73h13A29.07,29.07,0,0,0,22.21,63a28.87,28.87,0,0,0,15.27,53.38h78.08c13.36,0,24.75-10.36,25.3-23.72A24.68,24.68,0,0,0,123.5,68Zm-93.4-9a20.5,20.5,0,0,1-4.94-13.43A20.74,20.74,0,0,1,65,37.41a41.26,41.26,0,0,0-6.79,4.19A41.91,41.91,0,0,0,44.84,58.94,29.68,29.68,0,0,0,30.1,59.05Zm86.3,48.3H30.05a4.51,4.51,0,0,1-2.89-1.07C.87,84.06,30.25,50.25,56,74a.91.91,0,0,0,.65.24c5.27-.27,6.25-5.3,3.54-7.6a41.59,41.59,0,0,0-7.63-5.2,33.19,33.19,0,0,1,62.77,4.49c-8,.36-16,4.48-22.65,12a.94.94,0,0,0-.24.61c0,5.18,5,6.42,7.39,3.87,15.43-16.17,33.4-5.71,33.4,8.41A16.75,16.75,0,0,1,116.4,107.35Z"/>
+        </svg>
+      </div>
+
+
+      <h1 class="animated fadeIn">Cirrus</h1>
+      <h4 class="animated fadeIn">weather</h4>
+      <form>
+        <div class="form-row">
+          <div class="w-100 mb-3">
+            <!-- <label for="validationDefault05">Zip</label> -->
+            <input type="text" class="form-control col-sm-6 w-75" id="validationDefault05" placeholder="Zip" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check col-md-7 w-75">
+            <h6>Enter a location zip code for updated weather infomation<h6>
+            <input class="form-check-input mt-2" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label mt-1" for="invalidCheck2">
+          <a href="#"> Agree to terms and conditions</a>
+        </label>
+          </div>
+        </div>
+        <button class="btn btn-lg btn-block btn-outline-light" type="submit">Get Your Weather Update</button>
+      </form>
+    </div>
+  </main>
+
+
+  <div class="pricing-header px-5 py-5 pt-md-8 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Features</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+    </div>
+
+
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Headline</h3>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-light">Button</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Headline</h3>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-light">Button</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h3 class="my-0 font-weight-normal">Headline</h3>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title pricing-card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-light">Button</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <footer class="py-4 my-md-5 pt-md-3">
+        <div class="row">
+          <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="d-inline-block align-top" alt="" viewBox="0 0 140.88 116.35">
+              <title>Cloud</title>
+                <path class="a"
+                d="M123.5,68A41.31,41.31,0,0,0,72.41,35.18a28.49,28.49,0,0,0-3.54-6.26l8.87-8.87A4.13,4.13,0,1,0,72,14.14l-9,9a28.74,28.74,0,0,0-13.18-5.44V4.15S48.19,0,45.9,0a4,4,0,0,0-4,4.15V16.89a28.74,28.74,0,0,0-13.33,5.49l-9-9a4.15,4.15,0,0,0-5.86,5.87l9,9a29.13,29.13,0,0,0-5.49,13.11h-13A4.34,4.34,0,0,0,0,45.62c0,2.29,4.15,4.73,4.15,4.73h13A29.07,29.07,0,0,0,22.21,63a28.87,28.87,0,0,0,15.27,53.38h78.08c13.36,0,24.75-10.36,25.3-23.72A24.68,24.68,0,0,0,123.5,68Zm-93.4-9a20.5,20.5,0,0,1-4.94-13.43A20.74,20.74,0,0,1,65,37.41a41.26,41.26,0,0,0-6.79,4.19A41.91,41.91,0,0,0,44.84,58.94,29.68,29.68,0,0,0,30.1,59.05Zm86.3,48.3H30.05a4.51,4.51,0,0,1-2.89-1.07C.87,84.06,30.25,50.25,56,74a.91.91,0,0,0,.65.24c5.27-.27,6.25-5.3,3.54-7.6a41.59,41.59,0,0,0-7.63-5.2,33.19,33.19,0,0,1,62.77,4.49c-8,.36-16,4.48-22.65,12a.94.94,0,0,0-.24.61c0,5.18,5,6.42,7.39,3.87,15.43-16.17,33.4-5.71,33.4,8.41A16.75,16.75,0,0,1,116.4,107.35Z">
+                </path>
+            </svg>
+            <small class="d-block mb-0 text-muted">Cirrus Weather</small>
+            <small class="d-block mb-3 text-muted">© 2018</small>
+          </div>
+
+
+          <div class="col-6 col-md">
+            <h5>Section One</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Section Link</a></li>
+              <li><a class="text-muted" href="#">Section Link</a></li>
+              <li><a class="text-muted" href="#">Section Link</a></li>
+              <li><a class="text-muted" href="#">Section Link</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Section Two</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Section Link</a></li>
+              <li><a class="text-muted" href="#">Section Link</a></li>
+              <li><a class="text-muted" href="#">Section Link</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Section Three</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Section Link</a></li>
+              <li><a class="text-muted" href="#">Section Link</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- scripts -->
+
+    <!-- <script>
+    $(document).ready(function () {
+          $("navbar-nav").find("li").on("click", "a", function () {
+              $('.navbar-nav').ollapse navbar-collapse('hide');
+          });
+      });
+    </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
