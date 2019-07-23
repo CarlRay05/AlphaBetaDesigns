@@ -661,8 +661,13 @@
 
               <div class="col-sm-7">
 
-                <form class="form contact-form" id="contact_form">
+                <form name="contact" method="POST" data-netlify="true" class="form contact-form" id="contact_form">
                   <div class="clearfix">
+
+                    <!-- Form Label -->
+                    <div class="form-group">
+                      <label>Your Information:</label>
+                    </div>
 
                     <!-- Name -->
                     <div class="form-group">
