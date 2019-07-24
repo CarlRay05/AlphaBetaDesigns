@@ -2,11 +2,11 @@
 if($_POST)
 {
     $to_Email       = "carlray05@gmail.com"; // Replace with recipient email address
-	$subject        = 'Message from AlphaBeta Designs '.$_SERVER['SERVER_NAME']; //Subject line for emails
+	$subject        = 'Message from AlphaBeta Designs'.$_SERVER['SERVER_NAME']; //Subject line for emails
     
     $host           = "smtp.gmail.com"; // Your SMTP server. For example, smtp.mail.yahoo.com
-    $username       = "your.email@yahoo.com"; //For example, your.email@yahoo.com
-    $password       = "1234567"; // Your password
+    $username       = "carlray05@gmail.com"; //For example, your.email@yahoo.com
+    $password       = "M96$tw26}taR"; // Your password
     $SMTPSecure     = "ssl"; // For example, ssl
     $port           = 465; // For example, 465
     
@@ -91,4 +91,3 @@ if($_POST)
 	}
     
 }
-?>
