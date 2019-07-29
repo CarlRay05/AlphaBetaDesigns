@@ -1,0 +1,22 @@
+{
+  "name": "alphabetadesigns",
+  "version": "1.0.0",
+  "description": "AlphaBeta Designs Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlRay05/AlphaBetaDesigns.git"
+  },
+  "author": "Carl Ray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlRay05/AlphaBetaDesigns/issues"
+  },
+  "homepage": "https://github.com/CarlRay05/AlphaBetaDesigns#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
